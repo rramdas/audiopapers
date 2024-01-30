@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+
+{% block title %} Overview {% endblock title %}
+
+{% block content %}
+
+<h1>Your audiopapers!</h1>
+
+{% for paper in papers %}
+    
+    <h2>
+        <a href="{{ paper.get_absolute_url }}">{{ paper.title }}</href>
+
+        </a>
+    </h2>
+
+    <a href="create/">Create</a>
+
+{% endfor %}
+
+{% endblock content %}ß
